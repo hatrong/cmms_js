@@ -1,17 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CrudComponent from './components/CrudComponent';
+import './styles/index.css';
 
 const App = () => {
   return (
-    <Router>
-      <div className="app">
-        <h1 className="text-3xl font-bold text-center my-4">CRUD Application</h1>
-        <Routes>
-          <Route path="/" element={<CrudComponent />} />
-        </Routes>
+    <div className="min-h-screen bg-gray-100">
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">CRUD Application</h1>
+        <CrudComponent />
       </div>
-    </Router>
+    </div>
   );
 };
 

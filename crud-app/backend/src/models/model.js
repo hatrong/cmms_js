@@ -38,4 +38,4 @@ class CrudModel {
     }
 }
 
-export default CrudModel;
+module.exports = CrudModel;
