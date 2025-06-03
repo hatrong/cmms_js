@@ -1,0 +1,13 @@
+[package]
+name = "crud-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tauri = { version = "^1.0", features = ["api"] }
+
+[build]
+rustflags = ["--cfg", "tauri"]
+
+[package.metadata.tauri]
+bundle = { identifier = "com.example.crudapp", name = "CRUD App", version = "0.1.0" }
